@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Little Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5eee3;
+            margin: 0;
+            padding: 0;
+            color: #3e3025;
+        }
+
+        header {
+            background: #6b4f3a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 220px;
+        }
+
+        .card h2 {
+            color: #6b4f3a;
+        }
+
+        button {
+            background: #8b6a4e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #5c4230;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>☕ My Little Dashboard</h1>
+        <p>Welcome back, Afiya!</p>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>📚 Today's Goal</h2>
+            <p>Complete 3 DSA problems.</p>
+            <button onclick="alert('Good luck! You got this 💪')">
+                Start
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>💻 Current Project</h2>
+            <p>Working on a cool web development project.</p>
+            <button onclick="alert('Project opened!')">
+                Open Project
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>🌱 Progress</h2>
+            <p>Learning HTML, CSS and JavaScript.</p>
+
+            <progress value="70" max="100"></progress>
+
+            <p>70% completed</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Made with HTML & CSS ✨</p>
+    </footer>
+
+</body>
+</html>
